@@ -29,14 +29,6 @@ with open('data.txt') as f:
             print(r1,c1,r2,c2)
             for r in range(min(r1, r2), max(r1, r2) + 1):
                 board[r][c1] += 1
-        else:
-            rowDirection = 1 if r2 > r1 else -1
-            colDirection = 1 if c2 > c1 else -1
-            board[r1][c1] += 1
-            while r1 != r2 and c1 != c2:
-                r1 += rowDirection
-                c1 += colDirection
-                board[r1][c1] += 1
 
 # print(board)
 
